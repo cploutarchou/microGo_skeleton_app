@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	microGo "cloud0.christosploutarchou.com/cploutarchou/MicroGO"
 	"context"
+	microGo "github.com/cploutarchou/MicroGO"
 	"net/http"
 )
 

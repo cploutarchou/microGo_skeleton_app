@@ -2,7 +2,7 @@ package middleware
 
 import (
 	"app/data"
-	microGo "cloud0.christosploutarchou.com/cploutarchou/MicroGO"
+	microGo "github.com/cploutarchou/MicroGO"
 )
 
 type Middleware struct {

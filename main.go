@@ -4,7 +4,7 @@ import (
 	"app/data"
 	"app/handlers"
 	"app/middleware"
-	microGo "cloud0.christosploutarchou.com/cploutarchou/MicroGO"
+	microGo "github.com/cploutarchou/MicroGO"
 )
 
 type application struct {
