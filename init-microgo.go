@@ -9,7 +9,7 @@ import (
 	"os"
 )
 
-func initApplication() *application {
+func initApplication() *app {
 	path, err := os.Getwd()
 	if err != nil {
 		log.Fatal(err)
@@ -31,7 +31,7 @@ func initApplication() *application {
 		APP: rap,
 	}
 
-	app := &application{
+	app := &app{
 		App:        rap,
 		Handlers:   appHandlers,
 		Middleware: appMiddleware,

@@ -7,7 +7,7 @@ import (
 	microGo "github.com/cploutarchou/MicroGO"
 )
 
-type application struct {
+type app struct {
 	App        *microGo.MicroGo
 	Handlers   *handlers.Handlers
 	Models     data.Models

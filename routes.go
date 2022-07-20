@@ -5,8 +5,8 @@ import (
 	"net/http"
 )
 
-//routes The application routes.
-func (a *application) routes() *chi.Mux {
+//routes The app routes.
+func (a *app) routes() *chi.Mux {
 	// Note : All the middlewares must come before the routes
 
 	// Add routes here
