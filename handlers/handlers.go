@@ -13,7 +13,10 @@ type Handlers struct {
 
 // Home Request Handler for home package.
 func (h *Handlers) Home(w http.ResponseWriter, r *http.Request) {
-	err := h.render(w, r, "home", nil, nil)
+	_data := map[string]interface{}{
+		"Title": "HomePage",
+	}
+	err := h.render(w, r, "index", "main", nil, _data)
 	if err != nil {
 		h.APP.ErrorLog.Println("Unable to render page :", err)
 	}

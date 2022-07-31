@@ -6,8 +6,8 @@ import (
 	"net/http"
 )
 
-func (h *Handlers) render(w http.ResponseWriter, r *http.Request, tmpl string, vars, data interface{}) error {
-	return h.APP.Render.Page(w, r, tmpl, vars, data)
+func (h *Handlers) render(w http.ResponseWriter, r *http.Request, tmpl, layout string, vars, data interface{}) error {
+	return h.APP.Render.Page(w, r, tmpl, layout, vars, data)
 }
 
 func (h *Handlers) sessionPut(ctx context.Context, key string, value interface{}) {
